@@ -9,7 +9,7 @@ import javafx.scene.control.TextField;
 public class InflationController {
 
     @FXML
-    private ListView<Inflation> ListView;
+    private ListView<?> ListView;
 
     @FXML
     private Button detailsButton;
