@@ -8,15 +8,14 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane prefHeight="600.0" prefWidth="900.0" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.comp1011assignment21199455.InflationController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="600.0" opacity="0.75" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="900.0" />
       <Text layoutX="217.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LATIFI INFLATION APPLICATION" textAlignment="CENTER" wrappingWidth="465.7044140982181" />
       <Button fx:id="searchButton" layoutX="775.0" layoutY="126.0" mnemonicParsing="false" text="Search" textAlignment="CENTER" textFill="WHITE" />
       <Label fx:id="previewLabel" layoutX="544.0" layoutY="305.0" text="Country-Yearly Infaltion" />
-      <Button fx:id="detailsButton" layoutX="635.0" layoutY="423.0" mnemonicParsing="false" text="Details" />
+      <Button fx:id="detailsButton" layoutX="635.0" layoutY="423.0" mnemonicParsing="false" onAction="#DetailsScreen" text="Details" />
       <ListView fx:id="ListView" layoutX="89.0" layoutY="161.0" prefHeight="343.0" prefWidth="266.0" />
-      <TextField fx:id="searchBar" layoutX="388.0" layoutY="127.0" />
+      <TextField fx:id="searchBar" layoutX="388.0" layoutY="127.0" onAction="#searchCountry" />
    </children>
 </AnchorPane>

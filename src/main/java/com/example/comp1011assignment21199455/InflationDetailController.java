@@ -5,12 +5,14 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.ListView;
+import javafx.scene.image.Image;
 
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class InflationDetailController implements Initializable {
+public class InflationDetailController implements Initializable, LoadData{
 
     @FXML
     private Button BackBtn;
@@ -31,9 +33,20 @@ public class InflationDetailController implements Initializable {
     private Label YearlyRateLabel;
 
     @FXML
-    void BackBtn(ActionEvent event) throws IOException {
+    void inflationScreen(ActionEvent event) throws IOException {
         ChangeViews.changeViews(event,"inflation-view.fxml" );
     }
+
+
+    public void loadData(Inflation inflation){
+        CountryLabel.setText(inflation.getCountry());
+        MonthlyRateLabel.setText(Double.toString(inflation.getMonthlyRatePct()));
+        YearlyRateLabel.setText(Double.toString(inflation.getYearlyRatePct()));
+        TypeLabel.setText(inflation.getType());
+        PeriodLabel.setText(inflation.getPeriod());
+    }
+
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 

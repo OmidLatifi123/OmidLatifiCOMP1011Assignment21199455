@@ -51,7 +51,7 @@
       </VBox>
       <VBox layoutX="285.0" layoutY="156.0">
          <children>
-            <Label prefHeight="34.0" prefWidth="114.0" text="Label">
+            <Label fx:id="CountryLabel" prefHeight="34.0" prefWidth="114.0" text="Label">
                <font>
                   <Font name="Arial" size="24.0" />
                </font>
@@ -59,7 +59,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </padding>
             </Label>
-            <Label prefHeight="29.0" prefWidth="123.0" text="Label">
+            <Label fx:id="TypeLabel" prefHeight="29.0" prefWidth="123.0" text="Label">
                <font>
                   <Font name="Arial" size="24.0" />
                </font>
@@ -67,7 +67,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </padding>
             </Label>
-            <Label prefHeight="45.0" prefWidth="123.0" text="Label">
+            <Label fx:id="PeriodLabel" prefHeight="45.0" prefWidth="123.0" text="Label">
                <font>
                   <Font name="Arial" size="24.0" />
                </font>
@@ -75,7 +75,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </padding>
             </Label>
-            <Label prefHeight="45.0" prefWidth="123.0" text="Label">
+            <Label fx:id="MonthlyRateLabel" prefHeight="45.0" prefWidth="123.0" text="Label">
                <font>
                   <Font name="Arial" size="24.0" />
                </font>
@@ -83,7 +83,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </padding>
             </Label>
-            <Label prefHeight="45.0" prefWidth="123.0" text="Label">
+            <Label fx:id="YearlyRateLabel" prefHeight="45.0" prefWidth="123.0" text="Label">
                <font>
                   <Font name="Arial" size="24.0" />
                </font>
@@ -93,6 +93,6 @@
             </Label>
          </children>
       </VBox>
-      <Button layoutX="715.0" layoutY="491.0" mnemonicParsing="false" text="Back" />
+      <Button fx:id="BackBtn" layoutX="715.0" layoutY="491.0" mnemonicParsing="false" onAction="#inflationScreen" text="Back" />
    </children>
 </AnchorPane>

@@ -8,9 +8,9 @@ private String country;
 private String type;
     @SerializedName("period")
 private String period;
-    @SerializedName("monthly_Rate_Pct")
+    @SerializedName("monthly_rate_pct")
 private Double monthlyRatePct;
-    @SerializedName("yearly_Rate_Pct")
+    @SerializedName("yearly_rate_pct")
 private Double yearlyRatePct;
 
     public String getCountry() {
@@ -36,6 +36,6 @@ private Double yearlyRatePct;
     @Override
     public String toString()
     {
-        return String.format("%s-%d",country,yearlyRatePct);
+        return (this.country + " - " + Double.toString(this.yearlyRatePct));
     }
 }

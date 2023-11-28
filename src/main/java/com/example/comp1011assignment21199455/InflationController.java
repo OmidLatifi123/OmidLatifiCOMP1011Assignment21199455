@@ -29,13 +29,40 @@ public class InflationController implements Initializable {
     @FXML
     private Button searchButton;
 
+    public Inflation inflationSelected;
+
     @FXML
-    void DetailsButton(ActionEvent event) throws IOException {
-        ChangeViews.changeViews(event,"inflation-detail-view.fxml" );
+    void DetailsScreen(ActionEvent event) throws IOException {
+        ChangeViews.changeViews(event, "inflation-detail-view.fxml", inflationSelected);
+    }
+
+    @FXML
+    void searchCountry(ActionEvent event) {
+        ListView.getItems().clear();
+        try {
+            Inflation[] apiResponse = APIUtility.callAPI(searchBar.getText().trim());
+            ListView.getItems().addAll(apiResponse);
+            if (searchBar != null) {
+                ListView.getItems();
+            }
+
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
+        ListView.getItems().clear();
+
+        ListView.getSelectionModel()
+                .selectedItemProperty()
+                .addListener((obs, oldValue, I)->{
+
+                    inflationSelected = I;
+                });
     }
 }

@@ -19,4 +19,17 @@ public class ChangeViews {
         stage.setScene(scene);
         stage.show();
     }
+
+    public static void changeViews(ActionEvent event, String fxmlFileName, Inflation inflation) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource(fxmlFileName));
+        Scene scene = new Scene(fxmlLoader.load());
+
+        Stage stage =(Stage)((Node)event.getSource()).getScene().getWindow();
+
+        LoadData controller = fxmlLoader.getController();
+        controller.loadData(inflation);
+
+        stage.setScene(scene);
+        stage.show();
+    }
 }
