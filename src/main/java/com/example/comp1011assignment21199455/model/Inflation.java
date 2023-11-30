@@ -1,4 +1,4 @@
-package com.example.comp1011assignment21199455;
+package com.example.comp1011assignment21199455.model;
 import com.google.gson.annotations.SerializedName;
 
 public class Inflation {

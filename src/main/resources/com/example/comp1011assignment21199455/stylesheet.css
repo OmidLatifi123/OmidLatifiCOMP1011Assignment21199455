@@ -3,3 +3,43 @@
     -fx-background-image: url("background.jpg");
     -fx-background-size: cover;
 }
+
+.list-view {
+    -fx-background-color: lightgray;
+}
+
+.button {
+    -fx-background-color: #4c6baf;
+    -fx-text-fill: white;
+    -fx-font-size: 30px;
+}
+
+.button:hover {
+    -fx-background-color: #1e4d8a;
+}
+
+.button:pressed {
+    -fx-background-color: #1f2285;
+}
+
+.label {
+    -fx-font-size: 24px;
+    -fx-text-fill: #010b31;
+}
+
+.text-field {
+    -fx-background-color: #f2f2f2;
+}
+
+#titleLabel {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+    -fx-font-size: 36px;
+}
+
+#smallLabel {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+    -fx-font-size: 10px;
+}
+

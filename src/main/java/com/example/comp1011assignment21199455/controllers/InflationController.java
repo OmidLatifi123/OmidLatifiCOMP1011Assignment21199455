@@ -1,5 +1,8 @@
-package com.example.comp1011assignment21199455;
+package com.example.comp1011assignment21199455.controllers;
 
+import com.example.comp1011assignment21199455.api.APIUtility;
+import com.example.comp1011assignment21199455.ChangeViews;
+import com.example.comp1011assignment21199455.model.Inflation;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -21,13 +24,13 @@ public class InflationController implements Initializable {
     private Button detailsButton;
 
     @FXML
-    private Label previewLabel;
-
-    @FXML
     private TextField searchBar;
 
     @FXML
-    private Button searchButton;
+    private Label titleLabel;
+
+    @FXML
+    private Label smallLabel;
 
     public Inflation inflationSelected;
 

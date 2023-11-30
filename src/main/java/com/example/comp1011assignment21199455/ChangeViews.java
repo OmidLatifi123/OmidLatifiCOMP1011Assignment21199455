@@ -1,5 +1,7 @@
 package com.example.comp1011assignment21199455;
 
+import com.example.comp1011assignment21199455.api.LoadData;
+import com.example.comp1011assignment21199455.model.Inflation;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;

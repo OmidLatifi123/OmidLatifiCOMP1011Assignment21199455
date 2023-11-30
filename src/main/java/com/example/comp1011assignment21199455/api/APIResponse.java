@@ -1,5 +1,6 @@
-package com.example.comp1011assignment21199455;
+package com.example.comp1011assignment21199455.api;
 
+import com.example.comp1011assignment21199455.model.Inflation;
 import com.google.gson.annotations.SerializedName;
 
 import java.util.ArrayList;

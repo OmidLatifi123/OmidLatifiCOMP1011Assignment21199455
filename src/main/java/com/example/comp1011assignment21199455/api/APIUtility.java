@@ -1,13 +1,11 @@
-package com.example.comp1011assignment21199455;
+package com.example.comp1011assignment21199455.api;
+import com.example.comp1011assignment21199455.model.Inflation;
 import com.google.gson.Gson;
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-
 
 
 public class APIUtility {

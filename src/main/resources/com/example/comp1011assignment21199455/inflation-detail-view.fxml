@@ -8,11 +8,10 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="600.0" prefWidth="900.0" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.comp1011assignment21199455.InflationDetailController">
+<AnchorPane prefHeight="600.0" prefWidth="900.0" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.comp1011assignment21199455.controllers.InflationDetailController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="600.0" opacity="0.75" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="899.0" />
-      <Label alignment="CENTER" layoutX="289.0" layoutY="28.0" prefHeight="55.0" prefWidth="354.0" text="Inflation Detail " textAlignment="CENTER">
+      <Label fx:id="titleLabel" alignment="CENTER" layoutX="289.0" layoutY="28.0" prefHeight="55.0" prefWidth="354.0" text="Inflation Detail " textAlignment="CENTER">
          <font>
             <Font name="System Bold Italic" size="47.0" />
          </font>
